@@ -91,11 +91,11 @@ nav ul li a:hover {
   cursor: pointer;
   box-shadow: 0 0 0 rgb(48, 47, 48);
   transition: box-shadow 300ms, color 300ms;
-  position:fixed; left:50px; bottom:450px;
+  position:fixed; left:500px; bottom:450px;
 }
 
 .btn:hover {
-  color: black;
+  color: rgb(255, 0, 212);
   box-shadow: 10px 10px 0 #460353;
 }
 
@@ -131,11 +131,15 @@ form > div {
     display: block;
     margin-bottom: 5px;
     color: white;
+    position: relative;
+    left:850px;
 }
 
 .radio-group, select, textarea {
   margin-left: 15px;
   width: 200px;
+  position: relative;
+  left:850px;
 }
 
 textarea {
@@ -166,6 +170,6 @@ textarea {
     box-shadow: 0 0 0 rgb(48, 47, 48);
     transition: box-shadow 300ms, color 300ms;
     position: fixed;
-    left:50px;
+    left:881px;
     bottom:400px;
 }
