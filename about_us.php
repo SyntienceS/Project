@@ -8,13 +8,13 @@
 <div class="container">
   <nav>
     <ul class="bar">
-        <li><a href="home.html">Home</a></li>
-    <li><a href="auctions.html">Our Products</a></li>
-    <li><a href="contact_information.html">Contact Information</a></li>
-    <li><a href="survey.html">Survey</a></li>
-    <li><a href="about_us.html">About Us</a></li>
-    <li><a href="login.html">Login</a></li>
-    <li><a href="register.html">Register</a></li>
+        <li><a href="home.php">Home</a></li>
+    <li><a href="auctions.php">Our Products</a></li>
+    <li><a href="contact_information.php">Contact Information</a></li>
+    <li><a href="survey.php">Survey</a></li>
+    <li><a href="about_us.php">About Us</a></li>
+    <li><a href="login.php">Login</a></li>
+    <li><a href="register.php">Register</a></li>
     <p>
       <main>
         <section class="introduction">

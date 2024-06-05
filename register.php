@@ -1,3 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <title>Register</title>
+<link rel="icon" type="image/png" href="logo.png" />
+<link rel="stylesheet" href="survey.css">
+</head>
+<body>
+<div class="container">
+  <nav>
+    <ul class="bar">
+    <li><a href="home.php">Home</a></li>
+    <li><a href="auctions.php">Our Products</a></li>
+    <li><a href="contact_information.php">Contact Information</a></li>
+    <li><a href="survey.php">Survey</a></li>
+    <li><a href="about_us.php">About Us</a></li>
+    <li><a href="login.php">Login</a></li>
+    <li><a href="register.php">Register</a></li>
+  </ul>
+  </nav>
+  <form>
+  </div>
+  <div class="container">
+    <form action="register.php" method="post">
+        <label for="username">Username:</label>
+        <input type="text" name="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" required>
+        </br>
+        <!-- please send help-->
+      <div>
+        <button class="submit_btn">Register</button>
+      </div>
+    </form>
+</body>
+</html>
 <?php
 // register.php
 $servername = "localhost";
