@@ -87,7 +87,7 @@ if ($sort && $direction) {
 </head>
 <body>
     <h1>Product Management</h1>
-    <form action="index.php" method="post">
+    <form action="auctions.php" method="post">
         <label for="productName">Product Name:</label>
         <input type="text" id="productName" name="productName" required>
         <br>

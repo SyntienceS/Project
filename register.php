@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
     <title>Register</title>
 <link rel="icon" type="image/png" href="logo.png" />
-<link rel="stylesheet" href="survey.css">
+<link rel="stylesheet" href="style2.css">
 </head>
 <body>
 <div class="container">
@@ -19,21 +19,24 @@
     <li><a href="register.php">Register</a></li>
   </ul>
   </nav>
-  <form>
-  </div>
-  <div class="container">
     <form action="register.php" method="post">
-        <label for="username">Username:</label>
+        <div>
+            <span class="question">Username:</span>
+            <div class="radio-group">
         <input type="text" name="username" required>
+        </div>
         <br>
-        <label for="password">Password:</label>
+        <div>
+            <span class="question">Password:</span>
+            <div class="radio-group">
         <input type="password" name="password" required>
+        </div>
         </br>
         <!-- please send help-->
       <div>
         <button class="submit_btn">Register</button>
       </div>
-    </form>
+</form>
 </body>
 </html>
 <?php
