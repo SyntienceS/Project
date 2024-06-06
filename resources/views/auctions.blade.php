@@ -2,23 +2,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="icon" type="image/png" href="logo.png" />
-<link rel="stylesheet" href="style2.css">
+    <link rel="icon" type="image/png" href="{{ asset('logo.png') }}" />
+    <link rel="stylesheet" href="{{ asset('style2.css') }}">
 </head>
 <body>
 <div class="container">
   <nav>
     <ul class="bar">
-    <li><a href="home.php">Home</a></li>
-    <li><a href="auctions.php">Our Products</a></li>
-    <li><a href="contact_information.php">Contact Information</a></li>
-    <li><a href="survey.php">Survey</a></li>
-    <li><a href="about_us.php">About Us</a></li>
-    <li><a href="login.php">Login</a></li>
-    <li><a href="register.php">Register</a></li>
-  </ul>
+        <li><a href="{{ url('/home') }}">Home</a></li>
+        <li><a href="{{ url('/auctions') }}">Our Products</a></li>
+        <li><a href="{{ url('/contact_information') }}">Contact Information</a></li>
+        <li><a href="{{ url('/survey') }}">Survey</a></li>
+        <li><a href="{{ url('/about_us') }}">About Us</a></li>
+        <li><a href="{{ route('login') }}">Login</a></li>
+        <li><a href="{{ route('register') }}">Register</a></li>
+    </ul>
   </nav>
 </div>
+
+<h1>Product Management</h1>
+<form action="{{ url('/auctions') }}" method="post">
+    @csrf
+    <label for="productName">Product Name:</label>
+    <input type="text" id="productName" name="productName" required>
+    <br>
+    <label for="productPrice">Product Price:</label>
+    <input type="number" id="productPrice" name="productPrice" required step="0.01">
+    <br>
+    <button type="submit">Add Product</button>
+</form>
+<table>
+    <thead>
+        <tr>
+            <th><a href="{{ url('/auctions?sort=name&direction=' . ($direction === 'asc' ? 'desc' : 'asc')) }}">Product Name</a></th>
+            <th><a href="{{ url('/auctions?sort=price&direction=' . ($direction === 'asc' ? 'desc' : 'asc')) }}">Product Price</a></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(session('products', []) as $product)
+        <tr>
+            <td>{{ htmlspecialchars($product['name']) }}</td>
+            <td>{{ htmlspecialchars($product['price']) }}</td>
+        </tr>
+        @endforeach
+    </tbody>
 
 <!-- JavaScript Removed - 28/05/2024 -->
 
