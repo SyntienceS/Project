@@ -3,10 +3,10 @@
 <html>
 <head>
     <link rel="icon" type="image/png" href="{{ asset('logo.png') }}" />
-    <link rel="stylesheet" href="{{ asset('style2.css') }}">
+    @vite(['resources/js/app.js'])
 </head>
 <body>
-
+<button id="toggle-dark-mode">Toggle Dark Mode</button>
 <form>
     <div>
         <span class="question">1. How did you hear about us?</span>
