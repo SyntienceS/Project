@@ -1,6 +1,6 @@
 // resources/js/app.js
 import './bootstrap';
-import '../css/app.css'; 
+// import '../css/app.css'; 
 
 document.addEventListener('DOMContentLoaded', (event) => {
     const toggleDarkMode = document.getElementById('toggle-dark-mode');
