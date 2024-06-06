@@ -2,7 +2,7 @@
 <html>
 <head>
 <link rel="icon" type="image/png" href="logo.png" />
-<link rel="stylesheet" href="laravel\resources\css\style2.css">
+<link rel="stylesheet" href="style2.css">
 </head>
 <body>
 <div class="container">
