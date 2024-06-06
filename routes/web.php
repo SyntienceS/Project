@@ -8,11 +8,11 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/login', [App\Http\Controllers\HomeController::class, 'index'])->name('login');
+Route::get('/main', [App\Http\Controllers\HomeController::class, 'index'])->name('main');
 
 Auth::routes();
 
-Route::get('/register', [App\Http\Controllers\HomeController::class, 'index'])->name('register');
+Route::get('/main', [App\Http\Controllers\HomeController::class, 'index'])->name('main');
 
 // Route to view the Auctions page
 Route::get('/auctions', function () {
