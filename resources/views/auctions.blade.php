@@ -1,4 +1,4 @@
-
+@extends('layouts.app')
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,20 +6,6 @@
     <link rel="stylesheet" href="{{ asset('style2.css') }}">
 </head>
 <body>
-<div class="container">
-  <nav>
-    <ul class="bar">
-        <li><a href="{{ url('/home') }}">Home</a></li>
-        <li><a href="{{ url('/auctions') }}">Our Products</a></li>
-        <li><a href="{{ url('/contact_information') }}">Contact Information</a></li>
-        <li><a href="{{ url('/survey') }}">Survey</a></li>
-        <li><a href="{{ url('/about_us') }}">About Us</a></li>
-        <li><a href="{{ route('login') }}">Login</a></li>
-        <li><a href="{{ route('register') }}">Register</a></li>
-    </ul>
-  </nav>
-</div>
-
 <h1>Product Management</h1>
 <form action="{{ url('/auctions') }}" method="post">
     @csrf
@@ -34,9 +20,9 @@
 <table>
     <thead>
         <tr>
-            <th><a href="{{ url('/auctions?sort=name&direction=' . ($direction === 'asc' ? 'desc' : 'asc')) }}">Product Name</a></th>
-            <th><a href="{{ url('/auctions?sort=price&direction=' . ($direction === 'asc' ? 'desc' : 'asc')) }}">Product Price</a></th>
-        </tr>
+           {{-- <th><a href="{{ url('/auctions?sort=name&direction=' . ($direction === 'asc' ? 'desc' : 'asc')) }}">Product Name</a></th> 
+                <th><a href="{{ url('/auctions?sort=price&direction=' . ($direction === 'asc' ? 'desc' : 'asc')) }}">Product Price</a></th> --}}
+</tr>
     </thead>
     <tbody>
         @foreach(session('products', []) as $product)

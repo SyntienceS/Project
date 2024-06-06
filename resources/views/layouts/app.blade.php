@@ -37,6 +37,37 @@
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
                         @guest
+
+                            @if (Route::has('main'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('main') }}">{{ __('Home') }}</a>
+                                </li>
+                            @endif
+
+                            @if (Route::has('auctions'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('auctions') }}">{{ __('Our Products') }}</a>
+                                </li>
+                            @endif
+
+                            @if (Route::has('contact_information'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('contact_information') }}">{{ __('Contact Information') }}</a>
+                                </li>
+                            @endif
+
+                            @if (Route::has('survey'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('survey') }}">{{ __('Survey') }}</a>
+                                </li>
+                            @endif
+
+                            @if (Route::has('about_us'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('about_us') }}">{{ __('About Us') }}</a>
+                                </li>
+                            @endif
+
                             @if (Route::has('login'))
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
@@ -49,6 +80,37 @@
                                 </li>
                             @endif
                         @else
+
+                        @if (Route::has('main'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('main') }}">{{ __('Home') }}</a>
+                                </li>
+                            @endif
+
+                            @if (Route::has('auctions'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('auctions') }}">{{ __('Our Products') }}</a>
+                                </li>
+                            @endif
+
+                            @if (Route::has('contact_information'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('contact_information') }}">{{ __('Contact Information') }}</a>
+                                </li>
+                            @endif
+
+                            @if (Route::has('survey'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('survey') }}">{{ __('Survey') }}</a>
+                                </li>
+                            @endif
+
+                            @if (Route::has('about_us'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('about_us') }}">{{ __('About Us') }}</a>
+                                </li>
+                            @endif
+                            
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}
