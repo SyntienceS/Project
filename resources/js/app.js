@@ -9,10 +9,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const darkModePreference = localStorage.getItem('dark-mode');
     if (darkModePreference === 'enabled') {
         document.body.classList.add('dark-mode');
+        document.querySelector('.navbar').classList.add('dark-mode');
     }
 
     toggleDarkMode.addEventListener('click', () => {
         document.body.classList.toggle('dark-mode');
+        document.querySelector('.navbar').classList.toggle('dark-mode');
         if (document.body.classList.contains('dark-mode')) {
             localStorage.setItem('dark-mode', 'enabled');
         } else {

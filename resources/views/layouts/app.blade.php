@@ -18,7 +18,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
@@ -37,7 +37,6 @@
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
                         @guest
-
                             @if (Route::has('main'))
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('main') }}">{{ __('Home') }}</a>
@@ -80,8 +79,7 @@
                                 </li>
                             @endif
                         @else
-
-                        @if (Route::has('main'))
+                            @if (Route::has('main'))
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('main') }}">{{ __('Home') }}</a>
                                 </li>
