@@ -14,7 +14,7 @@
         <p>...</p>
     </section>
     <section class="temp_name">
-        <h2>Lost Heavy Inquisition</h2>
+        <h2>We are Lost Heavy Inquisition.</h2>
         <p></p>
     </section>
   </main>

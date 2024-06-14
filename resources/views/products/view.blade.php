@@ -2,6 +2,10 @@
 
 @section('content')
 <div class="container">
+<main>
+    <section class="introduction">
+        <h2>This page is currently not finished</h2>
+        <p>...</p>
     <h1>View Products</h1>
 
     @if($products->isEmpty())

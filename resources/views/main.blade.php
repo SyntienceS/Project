@@ -2,9 +2,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-            <img id="background" class="absolute -left-20 top-0 max-w-[877px]" src="background.svg" />
-    <link rel="icon" type="image/png" href="{{ asset('logo.png') }}" />
-    <link rel="stylesheet" href="{{ asset('app.js') }}">
+<main>
+    <section class="introduction">
+        <h2>This page is currently not finished</h2>
+        <p>...</p>
+        </section>
+    <section class="temp_name">
+        <h2>This page is currently not finished, I will finish it soon (probably)</h2>
+        <p></p>
+    </section>
 </head>
 <body>
 <div class="container">

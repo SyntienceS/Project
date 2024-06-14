@@ -37,17 +37,6 @@
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
                         @guest
-                            @if (Route::has('main'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('main') }}">{{ __('Home') }}</a>
-                                </li>
-                            @endif
-
-                            @if (Route::has('auctions'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('auctions') }}">{{ __('Our Products') }}</a>
-                                </li>
-                            @endif
 
                             @if (Route::has('contact_information'))
                                 <li class="nav-item">
@@ -79,11 +68,7 @@
                                 </li>
                             @endif
                         @else
-                            @if (Route::has('main'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('main') }}">{{ __('Home') }}</a>
-                                </li>
-                            @endif
+                            <!-- Product View has subroutes, that need to be added for product page to fully function -->
 
                             @if (Route::has('products.view'))
                                 <li class="nav-item">

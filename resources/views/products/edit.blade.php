@@ -2,6 +2,10 @@
 
 @section('content')
 <div class="container">
+<main>
+    <section class="introduction">
+        <h2>This page is currently not finished</h2>
+        <p>...</p>
     <h1>Edit Product</h1>
 
     <form action="{{ route('products.update', $product->id) }}" method="POST">

@@ -1,6 +1,10 @@
 @extends('layouts.app') 
 @section('content')
 <div class="container">
+<main>
+    <section class="introduction">
+        <h2>This page is currently not finished</h2>
+        <p>...</p>
     <h1>Products</h1>
     <a href="{{ route('products.create') }}" class="btn btn-primary">Add Product</a>
 
