@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\SurveyController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductController;
 
 Route::get('/', function () {
     return view('main');
@@ -14,10 +16,12 @@ Auth::routes();
 
 Route::get('/main', [App\Http\Controllers\HomeController::class, 'index'])->name('main');
 
-// Route to view the Auctions page
-Route::get('/auctions', function () {
-    return view('auctions');
-})->name('auctions');
+Route::post('/survey', [SurveyController::class, 'store'])->name('survey.store');
+
+Route::resource('products', ProductController::class);
+Route::get('view-products', [ProductController::class, 'viewProducts'])->name('products.view');
+Route::post('products/{product}/buy', [ProductController::class, 'buy'])->name('products.buy');
+Route::post('products/{product}/sell', [ProductController::class, 'sell'])->name('products.sell');
 
 // Route to view the About Us page
 Route::get('/about_us', function () {

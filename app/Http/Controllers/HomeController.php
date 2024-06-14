@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\UserStatistic;
+use Apps\Models\User;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
