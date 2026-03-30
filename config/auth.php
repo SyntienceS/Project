@@ -73,7 +73,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Resetting Passwords
+    | Reset Passwords
     |--------------------------------------------------------------------------
     |
     | These configuration options specify the behavior of Laravel's password

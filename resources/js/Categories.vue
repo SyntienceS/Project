@@ -84,6 +84,7 @@
 		//most_bids
 		//ending_soon
 		//most_recent
+		//most_recent
 	});
 </script>
 
@@ -167,4 +168,5 @@ h2{
 	margin: 15px;
 	
 }
+
 </style>

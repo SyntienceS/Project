@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\DB;
 use App\Models\categories;
 
 class stdClass{}
-
+//s
 class categoryController extends Controller
 {
     public function read(Request $request){

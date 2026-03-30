@@ -39,3 +39,4 @@ Route::post('/listings/read', [listingController::class, 'read']);
 Route::post('/reports/create', [reportController::class, 'create']);
 Route::post('/reports/read', [reportController::class, 'read']);
 
+//s
